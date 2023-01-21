@@ -1,0 +1,151 @@
+:root{
+    --firstColor: #3F0071;
+    --secondColor: #FB2576;
+    --thirdColor: #0DCAF0;
+    --fourthColor: #0002A1;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.carousel-item>.header{
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    /* width: 40%; */
+    color: #fff;
+}
+
+.header>h1{
+    color: var(--thirdColor);
+}
+
+.header>p{
+    margin: 20px 10px 70px 10px;
+}
+
+.header>button{
+    background-color: var(--firstColor);
+    color: grey !important;
+    border: 2px solid var(--thirdColor) !important;
+    border-radius: 15px !important;
+}
+.header>button:hover{
+    transform: scale(1.1,1.1);
+    cursor: pointer;
+    /* background-color:rgba(red, green, blue, .7); */
+    color: var(--thirdColor) !important;
+    box-shadow: rgba(17, 155, 219, 0.7) 0px 5px 15px;
+}
+/******* End Of the First Section ********/
+
+
+.navbar{
+    background: var(--firstColor) !important;
+}
+
+.navbar ul>li a:hover{
+    color: var(--thirdColor) !important;
+    border-bottom:2px solid var(--thirdColor);
+}
+
+h1{
+    color: var(--thirdColor) !important;
+}
+hr{
+    width: 15% !important;
+    border: 2px solid black !important;
+    margin: 10px auto !important;
+}
+/******** End of General *******/
+
+.card{
+    transition: all .5s;
+}
+
+.card.activity:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    transform: scale(1.05,1.05);
+    cursor: pointer;
+}
+
+.card>.imgSocial{
+    position: relative;
+}
+
+.social{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--secondColor);
+    color: var(--thirdColor);
+}
+
+.card:hover .social{
+    display: flex !important;
+}
+
+
+.card>.social>i.fa{
+    border-radius: 50%;
+}
+
+.card .icon{
+    border: 1px solid var(--thirdColor);
+    border-radius: 50% !important;
+    /* width: 40px;
+    height: 40px; */
+    padding: 7px;
+    padding-bottom: 30px;
+}
+/************ End Of The Card *************/
+
+.container .review{
+    border: none;
+}
+.container .review .imgReview{
+    /* background-color: rgba(156, 14, 14, 0.5) !important; */
+    opacity: .7;
+}
+
+.container .review p{
+    visibility: hidden;
+}
+
+.container .review:hover p{
+    visibility: visible;
+}
+.container .review:hover .imgReview{
+    opacity: 1;
+    cursor: pointer;
+}
+/********* End Of The Review ********/
+
+
+.container .row .featureContent{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: top;
+    color: black;
+}
+/********* End Of The Features ********/
+
+
+
+
+.footer{
+    background-color: var(--firstColor);
+    color: #fff;
+}
+.footer h3{
+    color: var(--thirdColor);
+}
+/********* End Of The Footer ********/
